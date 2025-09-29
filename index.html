@@ -302,83 +302,6 @@
       <div class="container">
         <div class="row">
 
-          <div class="col s12 m6 l6">
-            <div class="card large">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="music streaming app" src="/assets/img/project-music-player.png" style="height: 100%; width: 100%" class="activator" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Music Player Web-App<i
-                    class="mdi-navigation-more-vert right"></i></span>
-                <p>
-                 Dense Contact Barrier Functions for Safe Robot Interaction
-                </p>
-              </div>
-              <div class="card-reveal">
-                <!-- TODO: change this -- only close button -->
-                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
-                <span class="card-title grey-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li><b>Tools:</b> Django, HTML, CSS, Bootstrap, SQLite, AWS S3, Heroku</li>
-                  <li>Register/login to the web app(with OAuth-based Google Sign-In).</li>
-                  <li>Search and filter songs based on language and singer.</li>
-                  <li>Create multiple playlists and add/remove songs to/from playlist.</li>
-                  <li>Scroll through recently played/viewed songs.</li>
-
-
-                </ul>
-                <div class="card-action">
-                  <a aria-label="Visit " href="https://galvanic-music.herokuapp.com/" target="_blank" data-position="top"
-                    data-tooltip="View Online"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-external-link"></i></a>
-                  <a aria-label="Visit the GitHub repo for  project" href="https://github.com/varadbhogayata/music-player"
-                    target="_blank" data-position="top" data-tooltip="View Source"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-github"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col s12 m6 l6">
-            <div class="card large">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="quiz app" src="/assets/img/project-quizup-logo-1.png" style="height: 100%; width: 100%" class="activator" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Quiz Web-App<i
-                    class="mdi-navigation-more-vert right"></i></span>
-                <p>
-                  Imitation Learning for Robotic Manipulation with Franka Arm
-                </p>
-              </div>
-              <div class="card-reveal">
-                <!-- TODO: change this -- only close button -->
-                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
-                <span class="card-title grey-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li><b>Tools:</b> Django, HTML, CSS, Bootstrap, SQLite, Heroku</li>
-                  <li>Register/login to the web app(with OAuth-based Google Sign-In).</li>
-                  <li>Play Quiz and see the leaderboard</li>
-
-                </ul>
-                <div class="card-action">
-                  <a aria-label="Visit " href="https://quiz-up-app.herokuapp.com/" target="_blank" data-position="top"
-                    data-tooltip="View Online"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-external-link"></i></a>
-                  <a aria-label="Visit the GitHub repo for  project" href="https://github.com/varadbhogayata/QuizUp"
-                    target="_blank" data-position="top" data-tooltip="View Source"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-github"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
           <!-- Project 1 -->
           <div class="row project-item" style="margin-bottom: 60px;">
             <div class="col s12 m5">
@@ -386,14 +309,24 @@
             </div>
             <div class="col s12 m7">
               <h4 class="teal-text">Dense Contact Barrier Functions for Safe Robot Interaction</h4>
-              <p>This project developed a system based on control barrier functions for safe robot interactions in dense environments.</p>
+              <p>Our approach bypasses the
+computational complexity of explicitly modeling multi-object
+dynamics by instead learning a composable, object-centric
+function that implicitly captures the safety constraints arising
+from physical interactions. Trained offline on interactions with a
+few objects, the learned DCBFcomposes across arbitrary object
+sets at runtime, producing a single global safety filter that
+scales linearly and transfers across tasks without retraining.
+We validate our approach through simulated experiments in
+dense clutter, demonstrating its ability to enable collision-free
+navigation and safe, contact-rich interaction in suitable settings.</p>
               <div class="project-details">
-                <p><b>Tools:</b> Django, HTML, CSS, Bootstrap, SQLite, AWS S3, Heroku</p>
-                <ul>
-                  <li>Implemented efficient multi-contact safety control algorithms</li>
-                  <li>Validated system effectiveness in simulation and on real robots</li>
-                  <li>Enhanced robot safety and efficiency in cluttered environments</li>
-                </ul>
+                <p><b>Tools:</b> IsaacLab, ROS2, Linux, Pytorch</p>
+                <!-- <ul> -->
+                  <!-- <li>Implemented efficient multi-contact safety control algorithms</li> -->
+                  <!-- <li>Validated system effectiveness in simulation and on real robots</li> -->
+                  <!-- <li>Enhanced robot safety and efficiency in cluttered environments</li> -->
+                <!-- </ul> -->
                 <div class="project-links">
                   <a href="https://github.com/varadbhogayata/music-player" target="_blank" class="waves-effect waves-light btn teal">
                     <i class="fa fa-github left"></i>Source Code
@@ -415,7 +348,7 @@
               <h4 class="teal-text">Imitation Learning for Robotic Manipulation with Franka Arm</h4>
               <p>An imitation learning-based system for Franka robotic arm manipulation, enabling complex object grasping and handling.</p>
               <div class="project-details">
-                <p><b>Tools:</b> PyTorch, ROS, C++, Python</p>
+                <p><b>Tools:</b> Xtools, PyTorch, Python, Lerobot</p>
                 <ul>
                   <li>Developed an end-to-end imitation learning system</li>
                   <li>Trained manipulation policies using human demonstration data</li>
