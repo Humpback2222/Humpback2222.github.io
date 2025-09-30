@@ -285,30 +285,25 @@
           <!-- Project 1 -->
           <div class="row project-item" style="margin-bottom: 60px;">
             <div class="col s12 m5">
-              <img src="/assets/img/demoOurs.mp4" alt="Project Image" class="responsive-img z-depth-2" style="border-radius: 5px;">
+              <video class="responsive-video z-depth-2" style="border-radius: 5px;" controls autoplay muted loop>
+                <source src="/assets/img/demoOurs.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
             </div>
             <div class="col s12 m7">
               <h4 class="teal-text">Dense Contact Barrier Functions for Safe Robot Interaction</h4>
-              <p>Our approach bypasses the
-computational complexity of explicitly modeling multi-object
-dynamics by instead learning a composable, object-centric
-function that implicitly captures the safety constraints arising
-from physical interactions. Trained offline on interactions with a
-few objects, the learned DCBFcomposes across arbitrary object
-sets at runtime, producing a single global safety filter that
-scales linearly and transfers across tasks without retraining.
-We validate our approach through simulated experiments in
-dense clutter, demonstrating its ability to enable collision-free
-navigation and safe, contact-rich interaction in suitable settings.</p>
+              <p>
+                Our approach bypasses the computational complexity of explicitly modeling multi-object
+                dynamics by instead learning a composable, object-centric function that implicitly captures 
+                the safety constraints arising from physical interactions. Trained offline on interactions with 
+                a few objects, the learned DCBF composes across arbitrary object sets at runtime, producing 
+                a single global safety filter that scales linearly and transfers across tasks without retraining. 
+                We validate our approach through simulated experiments in dense clutter, demonstrating its 
+                ability to enable collision-free navigation and safe, contact-rich interaction in suitable settings.
+              </p>
               <div class="project-details">
                 <p><b>Keywords:</b> IsaacLab, ROS2, Linux, Pytorch</p>
-                <!-- <ul> -->
-                  <!-- <li>Implemented efficient multi-contact safety control algorithms</li> -->
-                  <!-- <li>Validated system effectiveness in simulation and on real robots</li> -->
-                  <!-- <li>Enhanced robot safety and efficiency in cluttered environments</li> -->
-                <!-- </ul> -->
                 <div class="project-links">
-
                   <a href="https://galvanic-music.herokuapp.com/" target="_blank" class="waves-effect waves-light btn blue-grey">
                     <i class="fa fa-external-link left"></i>Demo
                   </a>
@@ -316,7 +311,7 @@ navigation and safe, contact-rich interaction in suitable settings.</p>
               </div>
             </div>
           </div>
-      
+                
           <!-- Project 2 -->
           <div class="row project-item" style="margin-bottom: 60px;">
             <div class="col s12 m5">
