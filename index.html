@@ -318,13 +318,14 @@
             <div class="col s12 m7">
               <h4 class="teal-text">Dense Contact Barrier Functions for Safe Robot Interaction</h4>
               <p>
-                Our approach bypasses the computational complexity of explicitly modeling multi-object
-                dynamics by instead learning a composable, object-centric function that implicitly captures 
-                the safety constraints arising from physical interactions. Trained offline on interactions with 
-                a few objects, the learned DCBF composes across arbitrary object sets at runtime, producing 
-                a single global safety filter that scales linearly and transfers across tasks without retraining. 
-                We validate our approach through simulated experiments in dense clutter, demonstrating its 
-                ability to enable collision-free navigation and safe, contact-rich interaction in suitable settings.
+                We introduce Dense Contact Barrier Functions (DCBF), which learn an object-centric function that captures safety constraints without modeling full multi-object dynamics. 
+                Trained offline with only a few objects, DCBF can be applied at runtime to any number of objects, creating a single global safety filter that scales linearly and transfers to new tasks without retraining.
+                We validate our approach through simulated experiments in dense clutter, demonstrating its ability to enable collision-free navigation and safe, contact-rich interaction in suitable settings.
+              </p>
+              <p>
+                We introduce Dense Contact Barrier Functions (DCBF), which learn an object-centric function that captures safety constraints without modeling full multi-object dynamics. 
+                Trained offline with only a few objects, DCBF can be applied at runtime to any number of objects, creating a single global safety filter that scales linearly and transfers to new tasks without retraining.
+                We validate our approach through simulated experiments in dense clutter, demonstrating its ability to enable collision-free navigation and safe, contact-rich interaction in suitable settings.
               </p>
               <div class="project-details">
                 <p><b>Keywords:</b> IsaacLab, ROS2, Linux, Pytorch</p>
