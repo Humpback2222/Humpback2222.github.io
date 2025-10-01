@@ -347,9 +347,12 @@
               <div class="project-details">
                 <p><b>Keywords:</b> Xtools, PyTorch, Python, Lerobot</p>
                 <ul>
-                  <li>Developed an end-to-end imitation learning system</li>
-                  <li>Trained manipulation policies using human demonstration data</li>
-                  <li>Achieved generalization capabilities for novel objects</li>
+                  <li>Designed and implemented a custom teleoperation interface with mouse input and simulation environment in
+PyBullet for the Franka Emika Panda arm.</li>
+                  <li>Collected PushT dataset to train diffusion policy within the LeRobot framework, and implemented custom
+evaluation scripts to test policies in the self-built environment.</li>
+                  <li>Developed a mobile-device teleoperation pipeline to control the simulated robot, enabling real-time manipulation
+experiments.</li>
                 </ul>
                 <div class="project-links">
 
@@ -375,9 +378,11 @@
               <div class="project-details">
                 <p><b>Keywords:</b> PyTorch, Python, OpenPose-3D</p>
                 <ul>
-                  <li>Developed an end-to-end imitation learning system</li>
-                  <li>Trained manipulation policies using human demonstration data</li>
-                  <li>Achieved generalization capabilities for novel objects</li>
+                  <li>Used 3D OpenPose framework with multi-camera RGB video to detect human body joints and extract precise
+foot-ground contact sequences for IMU static calibration.</li>
+                  <li>Processed raw IMU data, used stepwise velocity and position integration to accurately reconstruct 3D trajecto-
+ries.</li>
+                  
                 </ul>
                 <div class="project-links">
 
@@ -403,9 +408,12 @@
               <div class="project-details">
                   <p><b>Keywords:</b> C++, ROS2, Linux</p>
                 <ul>
-                  <li>Developed an end-to-end imitation learning system</li>
-                  <li>Trained manipulation policies using human demonstration data</li>
-                  <li>Achieved generalization capabilities for novel objects</li>
+                  <li>Developed a multi-sensor navigation system that can be used in the orchard.</li>
+                  <li>Implemented ROS2 nodes for realtime path length calculation, path visualization and coordinate frame trans-
+formation (from Latitude, Longitude, Height coordinate to East-North-Up coordinate)</li>
+                  <li>Utilized Navigation2 function package and conducting simulation experiments in RViz and Gazebo.</li>
+                  <li>Used real IMU (Xsens), lidar (Velodyne), GNSS(Compass) and Ackerman chassis (Tracer mini) to test effect of
+obstacle avoidance in real word.</li>
                 </ul>
                 <div class="project-links">
 
@@ -428,9 +436,16 @@
               <div class="project-details">
                   <p><b>Keywords:</b> C, Embedded System</p>
                 <ul>
-                  <li>Developed an end-to-end imitation learning system</li>
-                  <li>Trained manipulation policies using human demonstration data</li>
-                  <li>Achieved generalization capabilities for novel objects</li>
+                  <li>Developed a multi-sensor, multi-closed-loop distributed control system by coordinating three control circuit
+boards, three power boards, and two motor driver boards.</li>
+                  <li>Constructed the real mechanical structure and tested USART, IMU, ultrasonic, encoder, motor, and digital
+steer.</li>
+                  <li>Adopted a master-slave interactive protocol (CAN bus protocol) to deal with the excessive distance between the
+sub control boards and the main control board.</li>
+                  <li>Utilized a combination of serial and parallel non-linear PID controller by implementing the positional loop in
+parallel with the attitude loop which consists of a series connection of angle and angular velocity control.</li>
+                  <li>Tested, verified the polarity and adjusted the PID parameters of every attitude loop and position loop in each
+step of the machine’s movement.</li>
                 </ul>
                 <div class="project-links">
 
@@ -468,9 +483,9 @@
               <div class="project-details">
                 <p><b>Keywords:</b> Xtools, PyTorch, Python, Lerobot</p>
                 <ul>
-                  <li>Developed an end-to-end imitation learning system</li>
-                  <li>Trained manipulation policies using human demonstration data</li>
-                  <li>Achieved generalization capabilities for novel objects</li>
+                  <li>Developed a closed-loop control system using ROS 2 on a Mecanum-Wheeled robot, implemented precise navigation to designated waypoints with Apriltag landmarks.</li>
+                  <li>Implemented Kalman Filter with Python to build map of robot trajectory and landmarks.</li>
+                  <li>Designed a navigation and obstacle-avoiding system to ensure the robot can drive to a specific end point without</li>
                 </ul>
                 <div class="project-links">
 
@@ -492,11 +507,12 @@
               <p>Our approach .</p>
               <div class="project-details">
                 <p><b>Keywords:</b> IsaacLab, ROS2, Linux, Pytorch</p>
-                <!-- <ul> -->
-                  <!-- <li>Implemented efficient multi-contact safety control algorithms</li> -->
+                <ul>
+                  <li>Implemented a quaternion-based orientation tracking system using IMU data and gradient descent optimization,
+generated panoramic images from camera frames with estimated orientation.</li>
                   <!-- <li>Validated system effectiveness in simulation and on real robots</li> -->
                   <!-- <li>Enhanced robot safety and efficiency in cluttered environments</li> -->
-                <!-- </ul> -->
+                </ul>
                 <div class="project-links">
 
                   <a href="https://galvanic-music.herokuapp.com/" target="_blank" class="waves-effect waves-light btn blue-grey">
@@ -517,11 +533,12 @@
               <p>Our approach .</p>
               <div class="project-details">
                 <p><b>Keywords:</b> IsaacLab, ROS2, Linux, Pytorch</p>
-                <!-- <ul> -->
+                <ul>
                   <!-- <li>Implemented efficient multi-contact safety control algorithms</li> -->
                   <!-- <li>Validated system effectiveness in simulation and on real robots</li> -->
-                  <!-- <li>Enhanced robot safety and efficiency in cluttered environments</li> -->
-                <!-- </ul> -->
+                  <li>Built a complete SLAM system using encoder, IMU, and LiDAR sensors, created occupancy grid and textured
+floor maps then optimized robot trajectory with pose graph optimization and loop closure.</li>
+                </ul>
                 <div class="project-links">
 
                   <a href="https://galvanic-music.herokuapp.com/" target="_blank" class="waves-effect waves-light btn blue-grey">
@@ -546,9 +563,9 @@
               <div class="project-details">
                 <p><b>Keywords:</b> PyTorch, Python, OpenPose-3D</p>
                 <ul>
-                  <li>Developed an end-to-end imitation learning system</li>
-                  <li>Trained manipulation policies using human demonstration data</li>
-                  <li>Achieved generalization capabilities for novel objects</li>
+                  <li>Implemented visual-inertial SLAM using Extended Kalman Filter, integrated stereo camera and IMU data for
+landmark mapping and trajectory estimation.</li>
+
                 </ul>
                 <div class="project-links">
 
