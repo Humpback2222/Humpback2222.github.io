@@ -322,9 +322,10 @@
                 Robot Interaction in Dense Clutter"</strong> Submitted to IEEE International Conference on Robotics and Automation (ICRA) 2026
               </p>
               <p>
-                We propose Dense Contact Barrier Functions (DCBF) for robots operating within densely cluttered spaces, which learn an object-centric function that captures safety constraints without modeling full multi-object dynamics. 
-                Trained offline with only a few objects, DCBF can be applied at runtime to any number of objects, creating a single global safety filter that scales linearly and transfers to new tasks without retraining.
-                We validate our approach through simulated experiments in dense clutter, demonstrating its ability to enable collision-free navigation and safe, contact-rich interaction in suitable settings.              </p>
+                We propose a novel Dense Contact Barrier Function (DCBF) framework enabling robots to safely interact with
+and navigate densely cluttered environments. Designed and implemented an object-centric neural barrier model that implicitly encodes inter-object contact
+dynamics through history-conditioned representations, supporting scalable and generalizable safety reasoning. Validated the framework across environments with up to 40 objects, demonstrating strong transfer and robust-
+ness in dense multi-object scenarios despite training solely on 4-object settings.          </p>
               <div class="project-details">
                 
                 <div class="project-links">
@@ -347,10 +348,9 @@
               <div class="project-details">
                 
                 <ul>
-                  <li>Designed and implemented a custom teleoperation interface with mouse input and simulation environment in
-PyBullet for the Franka Emika Panda arm. Then collected PushT dataset to train diffusion policy within the LeRobot framework, and implemented custom
-evaluation scripts to test policies in the self-built environment. Developed a mobile-device teleoperation pipeline to control the simulated robot, enabling real-time manipulation
-experiments.</li>
+                  <li>Designed and implemented a custom teleoperation interface with mouse input in a PyBullet-based simulation environment for the Franka Emika Panda arm. 
+                    Collected the PushT dataset to train diffusion policies within the LeRobot framework and developed custom evaluation scripts to assess policy performance in the self-built environment. 
+                    Built a mobile-device teleoperation pipeline for real-time robot manipulation experiments in simulation.</li>
                 </ul>
 
               </div>
@@ -373,9 +373,9 @@ experiments.</li>
               <div class="project-details">
                  
                 <ul>
-                  <li>Developed a multi-sensor navigation system that can be used in the orchard. Utilized Navigation2 function package for realtime path length calculation, path visualization and coordinate frame transformation (from Latitude, Longitude, Height coordinate to East-North-Up coordinate)and then conducted simulation experiments in RViz and Gazebo.</li>
-              Finally used real IMU (Xsens), lidar (Velodyne), GNSS(Compass) and Ackerman chassis (Tracer mini) to test effect of
-obstacle avoidance in real word.</li>
+                  <li> Developed a multi-sensor navigation system for autonomous navigation in orchard environments. Utilized the Navigation2 package and performed extensive simulation experiments in RViz and Gazebo.
+</li>
+              Finally used IMU (Xsens), lidar (Velodyne), GNSS(Compass) and Ackerman chassis (Tracer mini) to validated obstacle avoidance performance in real word.</li>
                 </ul>
 
               </div>
@@ -393,12 +393,9 @@ obstacle avoidance in real word.</li>
               <div class="project-details">
                  
                 <ul>
-                  <li>Developed a multi-sensor, multi-closed-loop distributed control system by coordinating three control circuit
-boards, three power boards, and two motor driver boards. Constructed the real mechanical structure and tested USART, IMU, ultrasonic, encoder, motor, and digital
-steer. Adopted a master-slave interactive protocol (CAN bus protocol) to deal with the excessive distance between the
-sub control boards and the main control board. Utilized a combination of serial and parallel non-linear PID controller by implementing the positional loop in
-parallel with the attitude loop which consists of a series connection of angle and angular velocity control. Tested, verified the polarity and adjusted the PID parameters of every attitude loop and position loop in each
-step of the machine’s movement.</li>
+                  <li>Developed a multi-sensor, multi–closed-loop distributed control system integrating three control circuit boards,
+three power boards, and two motor driver boards in coordinated operation. Built the full mechanical structure, tested tested microcontroller peripherals and actuators, utilized a combina-
+tion of serial and parallel non-linear PID controller.</li>
                 </ul>
 
               </div>
@@ -423,34 +420,15 @@ step of the machine’s movement.</li>
               <div class="project-details">
                
                 <ul>
-                  <li>Developed a closed-loop control system using ROS 2 on a Mecanum-Wheeled robot, implemented precise navigation to designated waypoints with Apriltag landmarks. Implemented Kalman Filter with Python to build map of robot trajectory and landmarks.</li>
+                  <li>Developed a closed-loop control system using ROS 2 on a Mecanum-wheeled robot, achieving precise waypoint
+navigation with AprilTag-based localization. Implemented a Kalman Filter to estimate robot trajectories and landmark positions for mapping and localization.</li>
          
                 </ul>
 
               </div>
             </div>
           </div>
-          
-          <!-- Project 2 -->
-          <div class="row project-item" style="margin-bottom: 60px;">
-            <div class="col s12 m5" style="margin-top:30px;">
-              <img src="/assets/img/pano.jpg" alt="Project Image" class="responsive-img z-depth-2" style="border-radius: 5px;">
-            </div>
-            <div class="col s12 m7">
-              <h4 class="teal-text">Sensing and Estimation in Robotics</h4>
-              
-              <div class="project-details">
-               
-                <ul>
-                  <li>Implemented a quaternion-based orientation tracking system using IMU data and gradient descent optimization,
-generated panoramic images from camera frames with estimated orientation.</li>
-                  <!-- <li>Validated system effectiveness in simulation and on real robots</li> -->
-                  <!-- <li>Enhanced robot safety and efficiency in cluttered environments</li> -->
-                </ul>
 
-              </div>
-            </div>
-          </div>
       
           <!-- Project 3 -->
           <div class="row project-item" style="margin-bottom: 60px;">
@@ -463,10 +441,9 @@ generated panoramic images from camera frames with estimated orientation.</li>
               <div class="project-details">
                
                 <ul>
-                  <!-- <li>Implemented efficient multi-contact safety control algorithms</li> -->
-                  <!-- <li>Validated system effectiveness in simulation and on real robots</li> -->
-                  <li>Built a complete SLAM system using encoder, IMU, and LiDAR sensors, created occupancy grid and textured
-floor maps then optimized robot trajectory with pose graph optimization and loop closure.</li>
+
+                  <li>Built a complete SLAM system integrating encoder, IMU, and LiDAR sensors, generated occupancy grids and
+textured floor maps, and optimized robot trajectories through pose graph optimization and loop closure method.</li>
                 </ul>
 
               </div>
@@ -487,8 +464,8 @@ floor maps then optimized robot trajectory with pose graph optimization and loop
               <div class="project-details">
                 
                 <ul>
-                  <li>Implemented visual-inertial SLAM using Extended Kalman Filter, integrated stereo camera and IMU data for
-landmark mapping and trajectory estimation.</li>
+                  <li>Implemented a visual–inertial SLAM pipeline using an Extended Kalman Filter, fusing stereo camera and IMU
+data for landmark mapping and accurate trajectory estimation.</li>
 
                 </ul>
 
@@ -538,8 +515,8 @@ foot-ground contact sequences for IMU static calibration. Then processed raw IMU
               <div class="project-details">
                  
                 <ul>
-                  <li>Implemented an enhanced Vision Transformer (ViT) tailored for CIFAR-10 image classification. By integrating architectural improvements, optimized training strategies and a strong data augmentation pipeline, the model significantly outperforms the baseline ViT. 
-                    Experiments show that the pure enhanced ViT achieves 87.55% accuracy and the CNN-hybrid version 87.18%, compared to the baseline’s 75.21%. 
+                  <li>Implemented an enhanced Vision Transformer (ViT) tailored for CIFAR-10 image classification. Integrated architectural improvements, optimized training strategies and a strong data augmentation to the baseline ViT. 
+                     
                    </li>
 
                 </ul>
@@ -628,7 +605,7 @@ foot-ground contact sequences for IMU static calibration. Then processed raw IMU
                 <p>
                   <b>Degree: </b>Bachelor of Engeering in Automation
                   <br>
-                  <b>GPA: </b>3.6/5.0 (86/)  
+                  <b>GPA: </b>3.6/5.0 (86/100)  
                 </p>
 
                 <ul>
